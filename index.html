@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header>
+    EasyBus - Online Bus Ticket Booking
+</header>
+
+<div id="links">
+    <a href="login.html">Login</a>
+    <a href="profile.html">Profile</a>
+    <a href="register.html">Sign Up</a>
+    <a href="booking.html">Bookings</a>
+    <a href="help.html">Help?</a>
+</div>
+
+<div class="banner">
+    Book Your Bus Tickets Easily
+</div>
+    <!--<header>
+        EasyBus - Online Bus Ticket Booking
+    </header>
+    <div id="links">
+    <div class="account-wrapper">
+       <a href="#">Account</a>
+
+        <div class="sidebar">
+            <h2>Account</h2>
+            <div class="account-text">Account</div>
+            <hr>
+
+            <h3>My details</h3>
+            <p>Bookings</p>
+            <a href="C:\Program Files\Notepad++\personaldetails.html" class="pi">Personal Information</a>
+
+
+            <h3>More</h3>
+            <p>Offers</p>
+            
+            <p>Cancel Ticket</p>
+            <p>Reschedule Ticket</p>
+        </div>
+    </div>
+    <a href="login.html">Login</a>
+	<a href="register.html">Sign Up</a>
+    <a href="#">Bookings</a>
+    <a href="#">Help?</a>
+</div>
+-->
+    
+    <div class="booking-box">
+	<form onsubmit="return goToBus()" >
+        <h2>Search Bus</h2>
+
+		<input type="text" id="from" placeholder="From" name="from" pattern="[A-Za-z ]+" title="Only alphabets allowed" required>
+
+        <input type="text" id="to" placeholder="To" name="to" pattern="[A-Za-z ]+" title="Only alphabets allowed" required>
+        <input type="date" id="travelDate" required>
+        <select>
+            <option>1 Passenger</option>
+            <option>2 Passengers</option>
+            
+        </select>
+        <br><br>
+        <button type="button" onclick="goToBus()">Search Buses</button>
+		</form>
+    </div>
+
+    <footer>
+         2026 EasyBus. All Rights Reserved.
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
